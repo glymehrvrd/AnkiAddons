@@ -10,6 +10,7 @@ from aqt import mw
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 
+
 def onFullScreen():
     mw.setWindowState(mw.windowState() ^ Qt.WindowFullScreen)
 

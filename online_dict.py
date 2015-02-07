@@ -3,7 +3,8 @@ from aqt import mw
 # import all of the Qt GUI library
 from aqt.qt import *
 
-import sys,os
+import sys
+import os
 modulespath = os.path.dirname(__file__) + os.sep + "onlinedict"
 sys.path.insert(0, modulespath)
 
