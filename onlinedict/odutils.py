@@ -149,7 +149,7 @@ def _xml2json(node):
                 js[key].append(value)
             else:
                 js[key] = value
-        elif child.nodeType == child.TEXT_NODE and (not isinstance(js, dict)):
+        elif child.nodeType in [child.TEXT_NODE,child.CDATA_SECTION_NODE] and (not isinstance(js, dict)):
             # 如果还没有出现映射数据,则收集TEXT节点数据
             if js == None:
                 js = ""
